@@ -9,3 +9,5 @@ data/summary/
 data/
 data/csv/
 saved_models/
+docker/
+*Dockerfile

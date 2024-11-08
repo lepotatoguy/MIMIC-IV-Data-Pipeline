@@ -71,7 +71,7 @@ class train_behrt():
             'train_data_len' : train_l,
             'val_data_len' : val_l,
             'test_data_len' : test_l,
-            'epochs' : 1, #50 by default
+            'epochs' : 50, #50 by default
             'action' : 'train'
         }
 
@@ -179,11 +179,11 @@ class train_behrt():
         recall = Recall(task="binary")
         print(recall(preds, labels))
 
-
-        # auroc = AUROC(task="multilabel",pos_label=1) #previously pos_label was 1. 
+        # previous code by Mehak et al.
+        # auroc = AUROC(pos_label=1) 
         # print(auroc(preds, labels))
 
-        # ap = AveragePrecision(task="multilabel",pos_label=1)
+        # ap = AveragePrecision(pos_label=1)
         # print(ap(preds, labels))
 
         # pres = Precision()
@@ -289,6 +289,8 @@ class train_behrt():
     def save_model(self, model_dict, file_name):
         torch.save(model_dict, file_name)
 
+
+        # previous code by Mehak et al. 
         # def run_epoch(e, trainload, device):
         #     tr_loss = 0
         #     start = time.time()
