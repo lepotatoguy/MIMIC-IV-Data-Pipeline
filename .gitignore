@@ -6,3 +6,5 @@ scrap
 *summary*.txt
 data/summary/
 *.csv
+data/
+data/csv/
