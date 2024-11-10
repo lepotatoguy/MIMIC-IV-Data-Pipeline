@@ -106,7 +106,7 @@ The code has been updated to be able to run in Pytorch V2. It was run on Python 
 
 The environment has also been updated and pushed to docker for convenience, to avoid dependency error as much as possible.
 
-Updated python files: `behrt_train.py` and `mainPipeline.ipynb`
+Updated python files: `model/behrt_train.py` and `mainPipeline.ipynb`
 
 ```
 docker pull joyanta180199/mimic-iv-pipeline-mehak-et-al-pytorch-v2
